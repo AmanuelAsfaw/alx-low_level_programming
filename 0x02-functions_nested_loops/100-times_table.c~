@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+#include "main.h"
+
+void print_times_table(int n)
+{
+	int iRow, iColumn;
+	for (iColumn = 0; iColumn <= n; iColumn++)
+	{
+		if(iColumn <= 15 && iColumn >= 0)
+		{
+			for (iRow = 0; iRow <= n; iRow++)
+			{
+				if ( iColumn <= 15 && iRow <= 15 && iColumn >= 0 && iRow >= 0)
+				{
+					int product = iColumn * iRow;
+					printf("%3d", product);
+				}
+				else{
+					break;
+				}
+			}
+			printf("%s","\n");
+		}
+		else{
+			break;
+		}
+	}
+}
