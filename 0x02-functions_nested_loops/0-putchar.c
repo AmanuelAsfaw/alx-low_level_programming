@@ -5,6 +5,7 @@
  *
  * Return Always 0 (Success)
  */
+/* main function */
 int main(void)
 {
 	char h[] = "_putchar";
